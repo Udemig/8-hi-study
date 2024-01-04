@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(47, 47, 47);
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: black;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header button {
+  padding: 10px;
+  color: white;
+}
+
+main {
+  flex: 1;
+  height: 80vh !important;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font: bold;
+}
+
+h3 {
+  text-align: center;
+  padding: 20px;
+}
+
+.text-area {
+  text-align: center;
+}
+
+.card {
+  max-width: 200px;
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card .body {
+  padding: 10px;
+}
+
+.card h3 {
+}
+
+.card p {
+}
+
+.wrapper {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
