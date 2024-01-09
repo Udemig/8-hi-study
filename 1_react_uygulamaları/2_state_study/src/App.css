@@ -1,0 +1,133 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.state-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+  background: #282c34;
+  color: white;
+}
+
+.counter {
+  text-align: center;
+}
+
+.counter div {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.counter button {
+  padding: 5px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: 1px solid white;
+}
+
+.counter button:hover {
+  scale: 0.95;
+}
+
+.counter span {
+  font-size: 24px;
+}
+
+.counter button:nth-of-type(1) {
+  background: aqua;
+  color: white;
+}
+
+.counter button:nth-of-type(2) {
+  background: crimson;
+  color: white;
+}
+
+.counter button:nth-of-type(3) {
+  background: green;
+  color: white;
+}
+
+button:disabled {
+  opacity: 0.5;
+}
+
+.acc {
+  margin: 30px 10px;
+  border: 1px solid gray;
+  width: 450px;
+}
+
+.acc div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid gray;
+  padding: 10px;
+}
+
+.acc p {
+  padding: 10px;
+  display: none;
+}
+
+.active {
+  display: block !important;
+}
+
+.acc button {
+  border: none;
+  background: none;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.light {
+  background: white !important;
+  color: black;
+}
+
+.light button {
+  color: black;
+}

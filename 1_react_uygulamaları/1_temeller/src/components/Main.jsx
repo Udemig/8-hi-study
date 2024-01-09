@@ -1,4 +1,5 @@
 import Card from './Card';
+import { data } from '../constants';
 
 /*
  ! JSX (Javascript XML):
@@ -47,23 +48,21 @@ function Main() {
         }}
       />
 
-      {/* Karttlar */}
+      {/*
+       * Kartlar
+       * Data dizisindeki her bir eleman için
+       * Ekrana bir kart bileşeni bas
+       * Çoklu Renderlama
+       */}
       <div className="wrapper">
-        <Card
-          image="https://picsum.photos/200"
-          category="giyim"
-          title="Hoodie"
-        />
-        <Card
-          image="https://picsum.photos/201"
-          category="elektronik"
-          title="Klavye"
-        />
-        <Card
-          image="https://picsum.photos/202"
-          category="bilgissayar"
-          title="Monitor"
-        />
+        {data.map((item) => (
+          <Card
+            image={item.image}
+            category={item.category}
+            title={item.title}
+            theme={item.theme}
+          />
+        ))}
       </div>
 
       {/* <img src={url} width={400} />
