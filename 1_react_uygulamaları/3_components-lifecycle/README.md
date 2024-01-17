@@ -88,3 +88,18 @@
 - veri olamma durrumunda ekrna bir şey gelicekse terneray tercih edilir
 
 - - dog ? dog.name : "karpuz"
+
+# Key
+
+- Anahtarlar; hangi öğelerin değiştiğini, eklendiğini ya da silindiğini belirleme noktasında
+  React’e yardımcı olur.
+
+- Map işlemi sonucu oluşturudğumuz jsx kodlarının kapsıycı elemanına key propu olarak benzersiz bir derğer göndermeliyiziz
+
+- Bu sayede eleman değişmesi gerektiğinde react daha performanslı bir şekilde çalışır.
+
+# useRef()
+
+- Bir react hook'udur
+- Jsx elemanın referansını alamay yarar
+- Javascript'ten bildiğimiz seçici methodların(getElemntById QuerySelector) react'taki karşılığı
