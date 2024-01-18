@@ -1,12 +1,16 @@
 {
   "todos": [
     {
-      "id": "1",
-      "title": "json-sever çalış"
+      "id": "40fd5c79-7b81-4f1e-b73f-e4fd864ffcb0",
+      "title": "React Proje Yap",
+      "status": "important",
+      "date": "1/18/2024"
     },
     {
-      "id": "2",
-      "title": "axios öğren"
+      "id": "8f2902a7-4e33-4c81-a916-b41347688ca1",
+      "title": "UUID Araştır",
+      "status": "daily",
+      "date": "1/18/2024"
     }
   ],
   "users": [
@@ -21,9 +25,22 @@
   ],
   "activty": [
     {
+      "id": "105",
+      "info": "heassp banlandı3",
+      "date": "10/10/2025",
+      "price": 104
+    },
+    {
       "id": "103",
+      "info": "heassp banlandı1",
+      "date": "10/01/2024",
+      "price": 200
+    },
+    {
+      "id": "104",
       "info": "heassp banlandı2",
-      "date": "10/01/2024"
+      "date": "10/02/2025",
+      "price": 50
     }
   ]
 }

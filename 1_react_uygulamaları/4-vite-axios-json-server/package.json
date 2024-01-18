@@ -8,12 +8,15 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "server": "json-server db.json"
+    "server": "json-server  --watch db.json --port 3030"
   },
   "dependencies": {
+    "axios": "^1.6.5",
+    "bootstrap": "^5.3.2",
     "json-server": "^1.0.0-alpha.21",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "uuid": "^9.0.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
