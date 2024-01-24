@@ -1,16 +1,94 @@
 {
   "todos": [
     {
-      "id": "40fd5c79-7b81-4f1e-b73f-e4fd864ffcb0",
-      "title": "React Proje Yap",
-      "status": "important",
-      "date": "1/18/2024"
-    },
-    {
       "id": "8f2902a7-4e33-4c81-a916-b41347688ca1",
       "title": "UUID Araştır",
       "status": "daily",
       "date": "1/18/2024"
+    },
+    {
+      "id": "2933bcf2-d955-4630-9ef6-1415abf56655",
+      "title": "Axios Öğren132",
+      "status": "important",
+      "date": "1/24/2024"
+    },
+    {
+      "id": "51ba90c5-4d8b-492b-8c0e-ee0c6aae8816",
+      "title": "Nextjs Öğren",
+      "status": "job",
+      "date": "1/24/2024"
+    },
+    {
+      "id": "a8d6b5c7-4cb6-47d6-aacc-33516b969f00",
+      "title": "gfhgj",
+      "status": "Varsayılan",
+      "date": "1/24/2024"
+    },
+    {
+      "id": "24fa1ab7-f7a7-465b-a966-9cd18a2e3b28",
+      "title": "gfhgjsdf",
+      "status": "job",
+      "date": "1/24/2024"
+    },
+    {
+      "id": "c486123f-87dc-44f5-8b62-0777233e5ca3",
+      "title": "gfhgjsdfsdf",
+      "status": "Varsayılan",
+      "date": "1/24/2024"
+    },
+    {
+      "id": "14242c81-5106-4b83-9e6a-570b19f44bd0",
+      "title": "zxc",
+      "status": "important",
+      "date": "1/24/2024"
+    },
+    {
+      "id": "4d13af57-98ed-4895-aa2b-608f0a7ebdfb",
+      "title": "zxczxczxc",
+      "status": "daily",
+      "date": "1/24/2024"
+    },
+    {
+      "id": "39b5a1fa-0fa9-409f-9202-ec875c4a4e97",
+      "title": "<zx",
+      "status": "Varsayılan",
+      "date": "1/24/2024"
+    },
+    {
+      "id": "e2bde721-db91-40c9-a83d-5a3ff3ba5ad0",
+      "title": "zxczxzx",
+      "status": "daily",
+      "date": "1/24/2024"
+    },
+    {
+      "id": "46ce6f15-4ca3-46eb-b52f-8054126a65bd",
+      "title": "dfgfdgfdg",
+      "status": "daily",
+      "date": "1/24/2024"
+    },
+    {
+      "id": "01774b63-198e-4be3-a260-3f481d8f1a70",
+      "title": "jhgjhgt",
+      "status": "important",
+      "date": "1/24/2024"
+    },
+    {
+      "id": "8ac99c10-affe-47ee-b014-edd24629a55d",
+      "title": "fghf",
+      "status": "Varsayılan",
+      "date": "1/24/2024"
+    },
+    {
+      "id": "65653461-adc6-4dd6-b14d-0279eb85b104",
+      "title": "fghfgh",
+      "status": "important",
+      "date": "1/24/2024"
+    },
+    {
+      "id": "6d01355f-6c20-46d7-ae2c-71fa1b51b1a3",
+      "title": "jkljllşilşi",
+      "status": "job",
+      "date": "1/24/2024"
     }
   ],
   "users": [
