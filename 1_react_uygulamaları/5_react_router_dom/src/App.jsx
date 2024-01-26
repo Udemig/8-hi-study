@@ -1,9 +1,10 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import './App.css';
 import MainPage from './pages/MainPage';
 import ProductsPage from './pages/ProductsPage';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import NotFound from './pages/NotFound';
+import ProductDetail from './pages/ProductDetail';
 
 function App() {
   return (
@@ -20,6 +21,12 @@ function App() {
            */}
           <Route path="/" element={<MainPage />} />
           <Route path="/ürünler" element={<ProductsPage />} />
+
+          {/* dinamik route */}
+          <Route path="/ürün/:id" element={<ProductDetail />} />
+
+          {/* tanımsız bir route'a yönlenirse */}
+          <Route path="*" element={<NotFound />} />
         </Routes>
 
         <Footer />

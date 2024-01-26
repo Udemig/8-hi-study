@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer>
-      <h1>Footer</h1>
+      <p className="text-center my-3">Tüm hakları saklıdır 2023</p>
     </footer>
   );
 };
