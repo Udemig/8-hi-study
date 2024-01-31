@@ -23,9 +23,9 @@ a:hover {
 
 body {
   margin: 0;
+  min-height: 100vh;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-  overflow-x: hidden;
 }
 
 h1 {
@@ -62,45 +62,5 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
-  }
-}
-
-/*  page */
-.page {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  justify-content: space-between;
-}
-
-header {
-  background: black;
-}
-
-footer {
-  background: black;
-  margin-top: 60px;
-}
-
-.active {
-  text-shadow: 0 0 15px #535bf2;
-  font-weight: bold;
-}
-
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 50px;
-  margin-top: 30px;
-}
-
-.card {
-  max-width: 260px;
-}
-
-@media (max-width: 800px) {
-  .card-container {
-    justify-content: center;
   }
 }
