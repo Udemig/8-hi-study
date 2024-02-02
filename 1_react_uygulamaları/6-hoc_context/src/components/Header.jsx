@@ -1,6 +1,28 @@
+import axios from 'axios';
+import { useContext, useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import { ProductContext } from '../context/productContext';
+import { BasketContext } from './../context/basketContext';
 
 const Header = () => {
+  const { setCategory } = useContext(ProductContext);
+  const { basket } = useContext(BasketContext);
+
+  const [categories, setCategories] = useState([]);
+
+  // api'dan kategori verişni al
+  useEffect(() => {
+    axios
+      .get('https://fakestoreapi.com/products/categories')
+      .then((res) => setCategories(res.data));
+  }, []);
+
+  // sepetteki ürün sayısını hesapla
+  const total = basket.reduce(
+    (total, product) => total + product.amount,
+    0
+  );
+
   return (
     <nav className="navbar navbar-dark bg-black sticky-top navbar-expand-md ">
       <div className="container-fluid">
@@ -47,7 +69,9 @@ const Header = () => {
               <li className="nav-item">
                 <NavLink className="nav-link" to="/checkout">
                   <span>Sepet</span>
-                  <span className="badge bg-danger ms-1">4</span>
+                  <span className="badge bg-danger ms-1">
+                    {total}
+                  </span>
                 </NavLink>
               </li>
               <li className="nav-item dropdown">
@@ -61,11 +85,19 @@ const Header = () => {
                   Katgoriler
                 </Link>
                 <ul className="dropdown-menu dropdown-menu-dark">
-                  <li>
+                  <li onClick={() => setCategory('all')}>
                     <a className="dropdown-item" href="#">
-                      Kategori
+                      Hepsi
                     </a>
                   </li>
+
+                  {categories?.map((cat) => (
+                    <li onClick={() => setCategory(cat)}>
+                      <a className="dropdown-item" href="#">
+                        {cat}
+                      </a>
+                    </li>
+                  ))}
                 </ul>
               </li>
             </ul>
