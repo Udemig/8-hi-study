@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  background: rgb(15, 15, 15);
+  color: white;
+  overflow: hidden;
+}
+
+.videos {
+  width: 100%;
+  display: grid;
+  gap: 50px;
+  height: 100vh;
+  overflow: auto;
+  grid-template-columns: repeat(auto-fit, minMax(350px, 450px));
+  justify-content: center;
+  padding: 10px;
+}
+
+.videos::-webkit-scrollbar {
+  background: transparent;
+  width: 6px;
+}
+
+.videos::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px;
+}
