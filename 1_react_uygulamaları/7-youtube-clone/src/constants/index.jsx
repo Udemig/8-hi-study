@@ -10,9 +10,9 @@ import { FiSettings, FiHelpCircle } from 'react-icons/fi';
 
 // Kategoriler
 export const categories = [
-  { name: 'New', icon: <AiFillHome />, type: 'home' },
+  { name: 'Anasayfa', icon: <AiFillHome />, type: 'home' },
   {
-    name: 'Trend',
+    name: 'Trendler',
     icon: <MdLocalFireDepartment />,
     type: 'trending',
   },

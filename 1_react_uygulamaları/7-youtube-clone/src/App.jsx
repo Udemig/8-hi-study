@@ -3,6 +3,7 @@ import Feed from './pages/Feed';
 import VideoDetail from './pages/VideoDetail';
 import SearchResult from './pages/SearchResult';
 import Header from './components/Header';
+import UndefinedPage from './components/UndefinedPage';
 
 const App = () => {
   return (
@@ -11,8 +12,9 @@ const App = () => {
 
       <Routes>
         <Route path="/" element={<Feed />} />
-        <Route path="/detail" element={<VideoDetail />} />
-        <Route path="/result" element={<SearchResult />} />
+        <Route path="/watch" element={<VideoDetail />} />
+        <Route path="/results" element={<SearchResult />} />
+        <Route path="*" element={<UndefinedPage />} />
       </Routes>
     </BrowserRouter>
   );
