@@ -1,6 +1,6 @@
 /*
  ! state'in nasıl değişeceğine karar veren fonksiyon
- * aldığı parametreler
+ *  aldığı parametreler
  *  >> state'in son hali
  *  >> aldğı emir
  
