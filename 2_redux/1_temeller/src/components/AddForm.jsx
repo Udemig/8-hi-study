@@ -1,5 +1,8 @@
 import { useDispatch } from 'react-redux';
 import { v4 } from 'uuid';
+import { ActionTypes } from '../redux/actionTypes/actionTypes';
+import { addTodo } from '../redux/actions/todoActions';
+import axios from 'axios';
 
 const AddForm = () => {
   // dispacth kurulum
@@ -18,13 +21,14 @@ const AddForm = () => {
       created_at: new Date().toLocaleDateString(),
     };
 
-    // 3) reducer'a aksiyonu ilet
-    dispatch({
-      type: 'ADD_TODO',
-      payload: newTodo,
-    });
+    // 3) veriyi api'a gönder
+    axios
+      .post('/todos', newTodo)
+      // 4) reducer'a aksiyonu ilet
+      .then(() => dispatch(addTodo(newTodo)));
 
-    // 4) formu temizle
+    // 5) formu temizle
+    e.target.reset();
   };
 
   return (

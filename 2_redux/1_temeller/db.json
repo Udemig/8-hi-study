@@ -1,0 +1,28 @@
+{
+  "todos": [
+    {
+      "id": "2e9d04cd-857e-4ab6-ab1e-ab41eb01088c",
+      "text": "javascript projesi yap123",
+      "is_done": false,
+      "created_at": "2/14/2024"
+    },
+    {
+      "id": "e6819303-4708-48cc-b5c8-026f9dffb9ce",
+      "text": "typescript öğren",
+      "is_done": true,
+      "created_at": "2/14/2023"
+    },
+    {
+      "id": "68f5b01d-34fc-408b-8d77-f08cc9a62fe6",
+      "text": "123123",
+      "is_done": true,
+      "created_at": "2/14/2024"
+    },
+    {
+      "id": "01fa1e31-3636-4b81-8d12-893cd4546b2c",
+      "text": "asd",
+      "is_done": false,
+      "created_at": "2/14/2024"
+    }
+  ]
+}

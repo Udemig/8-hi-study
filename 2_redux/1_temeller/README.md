@@ -58,3 +58,13 @@
 - store'un kurulumunu yap.
 
 - store'U projeye tanıt.
+
+# Apı ve Redux Birlikte Kullanımı
+
+- Bir projede veriler api'dan geliyorsa mutlaka state'i / context'i / store'u güncelleme işlemini api isteğine bağımlı hale getirmelisiniz. Aksi takdirde kullanıcıya gerçekleşmeye işlemleri yanıstırsınız.
+
+## Yaygın Hata Türleri
+
+- Bir değişikliği yapınca arayüz güncelleniyor ama sayfayı yeniliyeince değişliği kaybediyosanız hata api'dan kaynaklıdır.
+
+- Bir değişiklik yapınc arayüzün güncellenmesi için sayfayı yenilemek zorunda kalıyorasnız api başarılı bir güncellenmeiştir ama veriyi state'e , store'a veya context'e aktarmada sorun vardır

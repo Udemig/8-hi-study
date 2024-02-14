@@ -1,4 +1,5 @@
 import { useSelector } from 'react-redux';
+import TodoCard from './TodoCard';
 
 const ListTodos = () => {
   // store'da tutulan veirye bu bileşende ihityacım oldu
@@ -8,7 +9,7 @@ const ListTodos = () => {
   return (
     <div>
       {state.todos.map((todo) => (
-        <div>{todo.text}</div>
+        <TodoCard key={todo.id} todo={todo} />
       ))}
     </div>
   );
