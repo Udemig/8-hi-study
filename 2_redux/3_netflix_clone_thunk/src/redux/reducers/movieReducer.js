@@ -1,29 +1,25 @@
+import { ActionTypes } from '../actionTypes';
+
 const initialState = {
+  popularMovies: [],
   isLoading: false,
   isError: false,
-  basket: [],
 };
 
-const basketReducer = (state = initialState, action) => {
+const movieReducer = (state = initialState, action) => {
   switch (action.type) {
-    case 'ADD':
-      return {
-        ...state,
-        basket: state.basket.concat(action.payload),
-      };
-
-    case 'SET_BASKET_LOADING':
+    case ActionTypes.MOVIES_LOADING:
       return { ...state, isLoading: true };
 
-    case 'SET_BASKET_ERROR':
+    case ActionTypes.MOVIES_ERROR:
       return { ...state, isLoading: false, isError: action.payload };
 
-    case 'SET_BASKET_DATA':
+    case ActionTypes.MOVIES_SUCCESS:
       return {
         ...state,
         isLoading: false,
         isError: false,
-        basket: action.payload,
+        popularMovies: action.payload,
       };
 
     default:
@@ -31,4 +27,4 @@ const basketReducer = (state = initialState, action) => {
   }
 };
 
-export default basketReducer;
+export default movieReducer;

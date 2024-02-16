@@ -1,7 +1,7 @@
 {
   "products": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Akıllı Telefon",
       "make": "XYZ",
       "model": "A1",
@@ -16,7 +16,7 @@
       "image": "https://picsum.photos/201"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Dizüstü Bilgisayar",
       "make": "ABC",
       "model": "B2",
@@ -31,7 +31,7 @@
       "image": "https://picsum.photos/202"
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "Kablosuz Kulaklık",
       "make": "DEF",
       "model": "C3",
@@ -46,7 +46,7 @@
       "image": "https://picsum.photos/203"
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "Akıllı Saat",
       "make": "GHI",
       "model": "D4",
@@ -61,7 +61,7 @@
       "image": "https://picsum.photos/204"
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "Akıllı Televizyon",
       "make": "KLM",
       "model": "E5",
@@ -76,7 +76,7 @@
       "image": "https://picsum.photos/205"
     },
     {
-      "id": 6,
+      "id": "6",
       "title": "Oyun Bilgisayarı",
       "make": "NOP",
       "model": "F6",
@@ -91,7 +91,7 @@
       "image": "https://picsum.photos/206"
     },
     {
-      "id": 14,
+      "id": "14",
       "title": "Bluetooth Hoparlör",
       "make": "QRS",
       "model": "G7",
@@ -106,7 +106,7 @@
       "image": "https://picsum.photos/207"
     },
     {
-      "id": 7,
+      "id": "7",
       "title": "Kamera Seti",
       "make": "TUV",
       "model": "H8",
@@ -121,7 +121,7 @@
       "image": "https://picsum.photos/208"
     },
     {
-      "id": 8,
+      "id": "8",
       "title": "Kablosuz Fare",
       "make": "XYZ",
       "model": "F9",
@@ -136,7 +136,7 @@
       "image": "https://picsum.photos/209"
     },
     {
-      "id": 9,
+      "id": "9",
       "title": "Fitness Akıllı Bilezik",
       "make": "ABC",
       "model": "B10",
@@ -151,7 +151,7 @@
       "image": "https://picsum.photos/210"
     },
     {
-      "id": 10,
+      "id": "10",
       "title": "Taşınabilir Harici SSD",
       "make": "DEF",
       "model": "C11",
@@ -166,7 +166,7 @@
       "image": "https://picsum.photos/211"
     },
     {
-      "id": 11,
+      "id": "11",
       "title": "Gaming Klavye ve Mouse Seti",
       "make": "GHI",
       "model": "D12",
@@ -183,44 +183,28 @@
   ],
   "basket": [
     {
-      "id": 6,
+      "id": "6",
       "make": "NOP",
       "model": "F6",
       "price": 4000,
       "image": "https://picsum.photos/206",
-      "amount": 1
+      "amount": 2
     },
     {
-      "id": 14,
+      "id": "14",
       "make": "QRS",
       "model": "G7",
       "price": 120,
       "image": "https://picsum.photos/207",
-      "amount": 1
+      "amount": 4
     },
     {
-      "id": 4,
-      "make": "GHI",
-      "model": "D4",
-      "price": 500,
-      "image": "https://picsum.photos/204",
-      "amount": 1
-    },
-    {
-      "id": 5,
-      "make": "KLM",
-      "model": "E5",
-      "price": 2500,
-      "image": "https://picsum.photos/205",
-      "amount": 1
-    },
-    {
-      "id": 1,
-      "make": "XYZ",
-      "model": "A1",
-      "price": 1500,
-      "image": "https://picsum.photos/201",
-      "amount": 1
+      "id": "7",
+      "make": "TUV",
+      "model": "H8",
+      "price": 800,
+      "image": "https://picsum.photos/208",
+      "amount": 4
     }
   ]
 }

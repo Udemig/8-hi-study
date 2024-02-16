@@ -8,12 +8,15 @@ const BasketPage = () => {
   const store = useSelector((store) => store.basket);
   const dispatch = useDispatch();
 
-  console.log(store);
-
   // api'dan sepete eklenen ürünleri al ve store'a aktar
   useEffect(() => {
     dispatch(getBasket());
   }, []);
+
+  const total = store.basket.reduce(
+    (total, item) => total + item.amount * item.price,
+    0
+  );
 
   return (
     <div className="container p-5">
@@ -30,7 +33,7 @@ const BasketPage = () => {
 
         <div className="col-md-4">
           <div className="bg-white p-5 rounded w-100 text-black">
-            <h5 className="text-center">Toplam Tutar: 4555₺</h5>
+            <h5 className="text-center">Toplam Tutar: {total}$</h5>
             <button className="w-100 my-2">Alışverişi Tamamla</button>
           </div>
         </div>

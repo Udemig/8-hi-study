@@ -22,12 +22,10 @@ export const addToBasket = (product) => async (dispatch) => {
   );
 
   // 4) store'a yeni ürünü ekle
-  if (res.ok) {
-    dispatch({
-      type: 'ADD',
-      payload: newProduct,
-    });
-  }
+  dispatch({
+    type: 'ADD',
+    payload: newProduct,
+  });
 };
 
 // api'dan sepete verilerini alıp aşama aşama
@@ -50,6 +48,34 @@ export const getBasket = () => (dispatch) => {
       dispatch({
         type: 'SET_BASKET_ERROR',
         payload: err.message,
+      })
+    );
+};
+
+// sepette varolan ürünün miktarını 1 arrtır
+export const updateItem = (product) => (dispatch) => {
+  axios
+    .patch(`http://localhost:3040/basket/${product.id}`, {
+      amount: product.amount + 1,
+    })
+    // istek başarılı olursas reducer'a haber ver
+    .then(() =>
+      dispatch({
+        type: 'UPDATE',
+        payload: product.id,
+      })
+    );
+};
+
+// ürünü sepetten kaldırır
+export const removeItem = (delete_id) => (dispatch) => {
+  axios
+    .delete(`http://localhost:3040/basket/${delete_id}`)
+    // işlem başarılı olursa reducera haber ver
+    .then(() =>
+      dispatch({
+        type: 'DELETE',
+        payload: delete_id,
       })
     );
 };

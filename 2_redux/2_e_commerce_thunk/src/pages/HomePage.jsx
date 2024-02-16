@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import Loader from '../components/Loader';
 import { getData } from '../redux/actions/productActions';
 import Card from '../components/Card';
+import { getBasket } from '../redux/actions/basketActions';
 
 const HomePage = () => {
   // store'a abone ol
@@ -13,6 +14,9 @@ const HomePage = () => {
     // sadece bir aksiyon çalıştırıcaz
     // bu aksiyon api isteğinide arkaplanda yapıcak
     dispatch(getData());
+
+    // sepetteki verileri al
+    dispatch(getBasket());
   }, []);
 
   return (
