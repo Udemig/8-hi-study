@@ -8,3 +8,7 @@ body {
   background-color: #242424;
   min-height: 100vh;
 }
+
+.hero-img {
+  filter: drop-shadow(0 0 80px rgba(255, 255, 255, 0.336));
+}

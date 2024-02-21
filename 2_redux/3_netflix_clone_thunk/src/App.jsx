@@ -10,12 +10,14 @@ import DetailPage from './pages/DetailPage';
 const App = () => {
   return (
     <Router>
-      <Header />
+      <div className="p-5 md:p-10 lg:p-15 xl:px-20">
+        <Header />
 
-      <Yollar>
-        <Yol path="/" element={<MainPage />} />
-        <Yol path="/film/:id" element={<DetailPage />} />
-      </Yollar>
+        <Yollar>
+          <Yol path="/" element={<MainPage />} />
+          <Yol path="/detay/:id" element={<DetailPage />} />
+        </Yollar>
+      </div>
     </Router>
   );
 };

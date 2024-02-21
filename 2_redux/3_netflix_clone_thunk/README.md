@@ -1,3 +1,5 @@
+- API: https://developer.themoviedb.org/reference/intro/getting-started
+
 # Kütüphaneler
 
 - redux
