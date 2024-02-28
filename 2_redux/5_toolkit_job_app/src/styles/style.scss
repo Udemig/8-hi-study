@@ -67,6 +67,7 @@ header {
 
 .job-list {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 50px;
   padding: 20px;
 }
@@ -125,4 +126,49 @@ header {
       }
     }
   }
+}
+
+//! Ekleme Sayfası
+.add-page {
+  min-height: 90vh;
+  display: grid;
+  place-items: center;
+}
+
+.add-sec {
+  width: 70vw;
+  max-width: 700px;
+  box-shadow: 0 0 55px 0 rgb(226, 68, 160);
+  padding: 25px;
+
+  form {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+
+    div {
+      display: flex;
+      flex-direction: column;
+    }
+
+    div input,
+    div select {
+      padding: 10px 15px;
+      margin-top: 5px;
+      border-radius: 5px;
+      font-family: 'poppins';
+    }
+
+    div:last-child {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.filter-sec {
+  @extend .add-sec;
+  margin: 30px auto 80px;
 }

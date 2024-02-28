@@ -5,6 +5,7 @@ import { BsFillCalendarDateFill } from 'react-icons/bs';
 import axios from 'axios';
 import { useDispatch } from 'react-redux';
 import { deleteJob } from '../redux/slices/jobSlice';
+import { toast } from 'react-toastify';
 
 const Card = ({ job }) => {
   const dispatch = useDispatch();
@@ -19,12 +20,16 @@ const Card = ({ job }) => {
     if (confirm('Silmek istediğinizden emin misiniz ? ')) {
       // api isteği at
       axios
-        .delete(`http://localhost:3001/jobs/${job.id}`)
+        .delete(`http://localhost:3001/jobs123/${job.id}`)
         // başarılı olursa store'dan kaldır
         .then(() => {
           dispatch(deleteJob(job.id));
+
+          toast.success('İş başarıyla kaldırıldı');
+        })
+        .catch((err) => {
+          toast.error('Üzgünüz, işlem gerçekleşirken bir hata oluştu');
         });
-      // todo başarısız olursa uyarı ver
     }
   };
 
