@@ -7,79 +7,34 @@
       "location": "Seattle",
       "status": "Mülakat",
       "type": "Yarı Zamanlı",
-      "date": "3/10/2024"
+      "date": "1/12/2023"
     },
     {
-      "id": "6",
-      "position": "Data Scientist",
+      "id": "7d4b8f91-cdf8-4017-9aef-19734b01247c",
+      "position": "Frontend Developer",
       "company": "Microsoft",
       "location": "Redmond",
-      "status": "Devam Ediyor",
-      "type": "Tam Zamanlı",
-      "date": "3/1/2024"
-    },
-    {
-      "id": "7",
-      "position": "Frontend Developer",
-      "company": "Udemig",
-      "location": "İzmir/Bayraklı",
-      "status": "Devam Ediyor",
-      "type": "Tam Zamanlı",
-      "date": "1/17/2021"
-    },
-    {
-      "id": "16528397-701f-41f8-a7a3-78bdb2e5c086",
-      "position": "Frontend",
-      "company": "Udemig",
-      "location": "Fransa",
-      "status": "Reddedildi",
-      "type": "Uzaktan",
-      "date": "28.02.2024"
-    },
-    {
-      "id": "f6dc4876-15f0-4737-96c4-0786a2860f0f",
-      "position": "Backend Dev",
-      "company": "Netlify",
-      "location": "England",
-      "status": "Devam Ediyor",
-      "type": "Uzaktan",
-      "date": "28.02.2024"
-    },
-    {
-      "id": "b35fb0ad-c8ef-4847-b8f7-84ff498fd992",
-      "position": "Firefox",
-      "company": "asdas",
-      "location": "asdas",
       "status": "Reddedildi",
       "type": "Yarı Zamanlı",
-      "date": "28.02.2024"
+      "date": "2/29/2024"
     },
     {
-      "id": "07115dc3-931a-47b6-9813-b1a474e6f2ea",
-      "position": "Edge",
-      "company": "Edge",
-      "location": "Edge",
-      "status": "Reddedildi",
-      "type": "Yarı Zamanlı",
-      "date": "28.02.2024"
-    },
-    {
-      "id": "312787de-b821-43a7-8fdf-5876e9ba6694",
+      "id": "95cedbd1-2ca5-419e-b7be-35bb35ef9fa2",
       "position": "Product Manager",
-      "company": "asdas",
-      "location": "asdasd",
-      "status": "Devam Ediyor",
+      "company": "Udemig",
+      "location": "Redmond",
+      "status": "Reddedildi",
       "type": "Yarı Zamanlı",
-      "date": "28.02.2024"
+      "date": "9/29/2024"
     },
     {
-      "id": "28e41793-22d5-4c63-a712-2ababa43959e",
-      "position": "Frontend Developer",
-      "company": "Amazon",
-      "location": "Seattle",
+      "id": "dfa3f1c6-8533-4cac-873c-64479ecec34a",
+      "position": "Product Manager",
+      "company": "Udemig",
+      "location": "Türkiye",
       "status": "Devam Ediyor",
-      "type": "Yarı Zamanlı",
-      "date": "28.02.2024"
+      "type": "Tam Zamanlı",
+      "date": "2/29/2022"
     }
   ]
 }

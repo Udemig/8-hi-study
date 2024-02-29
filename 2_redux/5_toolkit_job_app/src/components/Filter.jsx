@@ -1,9 +1,27 @@
 import { useDispatch } from 'react-redux';
 import { filterBySearch, sortJobs } from '../redux/slices/jobSlice';
 import { sortOptions, statusOptions, typeOptions } from './../constants/index';
+import { useEffect, useState } from 'react';
+import { useDebounce } from '@uidotdev/usehooks';
 
 const Filter = () => {
+  const [text, setText] = useState('');
   const dispatch = useDispatch();
+  // 2.yol
+  const debouncedText = useDebounce(text, 500);
+
+  // her tuş vuruşunda filtreleme yapmak düşük donanımlı cihazlarda kasmalara ve donmalara sebep olabileceğinden filtreme işlemini kullancı yazma işini bıraktığı anda yapmalıyız. Bu işleme Debounce denir. Ardışık olarak udemifgerçekleşen fonksiyon çağırma işlemlerinde fonksiyonun kısa bir zaman aralığında çağrılığını görmezsden gelir.
+  useEffect(() => {
+    // bir sayaç başlat ve işlemi sayaç durduğunda yap
+    const timer = setTimeout(() => {
+      dispatch(filterBySearch({ text, name: 'company' }));
+    }, 500);
+
+    // eğerki süre bitmeden tekrardan useEffect çalışırsa önceki sayacın çalışmasını durdur
+    return () => {
+      clearTimeout(timer);
+    };
+  }, [text]);
 
   return (
     <section className="filter-sec">
@@ -12,14 +30,7 @@ const Filter = () => {
       <form>
         <div>
           <label>Şirket ismine göre ara</label>
-          <input
-            onChange={(e) => {
-              dispatch(
-                filterBySearch({ name: 'company', text: e.target.value })
-              );
-            }}
-            type="text"
-          />
+          <input onChange={(e) => setText(e.target.value)} type="text" />
         </div>
 
         <div>
