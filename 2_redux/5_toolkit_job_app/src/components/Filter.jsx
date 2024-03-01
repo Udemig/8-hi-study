@@ -1,5 +1,9 @@
 import { useDispatch } from 'react-redux';
-import { filterBySearch, sortJobs } from '../redux/slices/jobSlice';
+import {
+  clearFilters,
+  filterBySearch,
+  sortJobs,
+} from '../redux/slices/jobSlice';
 import { sortOptions, statusOptions, typeOptions } from './../constants/index';
 import { useEffect, useState } from 'react';
 import { useDebounce } from '@uidotdev/usehooks';
@@ -52,7 +56,7 @@ const Filter = () => {
         <div>
           <label>Tür</label>
           <select
-            onClick={(e) =>
+            onChange={(e) =>
               dispatch(filterBySearch({ name: 'type', text: e.target.value }))
             }
           >
@@ -78,7 +82,11 @@ const Filter = () => {
         </div>
 
         <div>
-          <button type="reset" id="special-button">
+          <button
+            onClick={() => dispatch(clearFilters())}
+            type="reset"
+            id="special-button"
+          >
             <span className="circle1"></span>
             <span className="circle2"></span>
             <span className="circle3"></span>

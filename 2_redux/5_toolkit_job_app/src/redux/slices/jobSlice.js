@@ -75,6 +75,10 @@ const jobSlice = createSlice({
           break;
       }
     },
+
+    clearFilters: (state) => {
+      state.jobs = state.mainJobs;
+    },
   },
 });
 
@@ -87,6 +91,7 @@ export const {
   createJob,
   filterBySearch,
   sortJobs,
+  clearFilters,
 } = jobSlice.actions;
 
 // reducer'ı export et
