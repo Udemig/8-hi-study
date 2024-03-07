@@ -1,0 +1,37 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "user": "Mehmet",
+      "title": "React MVC Pattern (Mimari)",
+      "text": "MVC Mimari ile nasıl bileşenleri yöntirim??",
+      "date": "2023-09-10"
+    },
+    {
+      "id": "2",
+      "user": "Ali",
+      "title": "React MVVM Paterni",
+      "text": "Bu nedir???",
+      "date": "2023-09-11T19:13:21.364Z"
+    },
+    {
+      "id": "3",
+      "date": "2023-09-11T19:13:21.364Z",
+      "title": "React Problemi",
+      "text": "Bunu nasıl çözeriz???",
+      "user": "Ahmet"
+    },
+    {
+      "id": "1ad30c6e-84bc-43ff-8b4c-cd7ad4024dd6",
+      "user": "Ali",
+      "title": "Fireabase",
+      "text": "Yeni güncellemdden sonra...."
+    },
+    {
+      "id": "8e02feb3-f4c5-42ea-b6d5-393d85ebf785",
+      "user": "Mehmet",
+      "title": "JSX Nedir?",
+      "text": "JSXJSX JSX JSXJSXJSXJSXJSXJSXJSX"
+    }
+  ]
+}
