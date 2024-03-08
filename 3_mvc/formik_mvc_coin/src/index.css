@@ -2,3 +2,62 @@ body {
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 }
+
+.invalid-feedback {
+  display: block;
+  visibility: hidden;
+}
+
+.feedback {
+  visibility: hidden;
+  color: red;
+}
+
+div .is-invalid + .feedback {
+  visibility: visible;
+}
+
+.up {
+  color: rgb(0, 255, 0) !important;
+}
+
+.down {
+  color: red !important;
+}
+
+.coin-card {
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.coin-card:hover {
+  box-shadow: 0 0 30px gray;
+  transform: translate(10px, -10px);
+}
+
+/* daha fazla butonu */
+.more-btn {
+  --hover-shadows: 16px 16px 33px #121212, -16px -16px 33px #303030;
+  --accent: fuchsia;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  border: none;
+  border-radius: 1.1em;
+  background-color: #212121;
+  cursor: pointer;
+  color: white;
+  padding: 0.7em 1.4em;
+  transition: box-shadow ease-in-out 0.3s, background-color ease-in-out 0.1s,
+    letter-spacing ease-in-out 0.1s, transform ease-in-out 0.1s;
+  box-shadow: 13px 13px 10px #1c1c1c, -13px -13px 10px #262626;
+}
+
+.more-btn:hover {
+  box-shadow: var(--hover-shadows);
+}
+
+.more-btn:active {
+  box-shadow: var(--hover-shadows), var(--accent) 0px 0px 30px 5px;
+  background-color: var(--accent);
+  transform: scale(0.95);
+}
