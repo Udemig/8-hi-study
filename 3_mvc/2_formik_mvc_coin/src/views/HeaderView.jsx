@@ -5,7 +5,7 @@ const HeaderView = () => {
     <div className="d-flex justify-content-between p-3 align-items-center">
       <Link to={'/home'} className="d-flex gap-3 align-items-center">
         <img height={40} src="/c-logo.png" />
-        <h3 className="text-light">Coinmania</h3>
+        <h3 className="text-light ">Coinmania</h3>
       </Link>
 
       <nav className="d-flex gap-3 ">

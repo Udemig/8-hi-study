@@ -1,8 +1,12 @@
 import millify from 'millify';
+import { Link } from 'react-router-dom';
 
 const CardView = ({ data }) => {
   return (
-    <div className="coin-card d-flex flex-column justify-content-between border rounded p-3">
+    <Link
+      to={`/coin/${data.id}`}
+      className="coin-card d-flex flex-column justify-content-between border rounded p-3 text-decoration-none text-white"
+    >
       <div>
         <h3>{data.name}</h3>
         <h6>{data.symbol}</h6>
@@ -15,7 +19,7 @@ const CardView = ({ data }) => {
           %{Number(data.changePercent24Hr).toFixed(2)}
         </span>
       </p>
-    </div>
+    </Link>
   );
 };
 
