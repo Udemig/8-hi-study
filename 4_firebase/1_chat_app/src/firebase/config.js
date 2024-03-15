@@ -1,15 +1,18 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from 'firebase/app';
 import { getAuth, GoogleAuthProvider } from 'firebase/auth';
+import { getFirestore } from 'firebase/firestore';
+
+console.log();
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: 'AIzaSyBdg_7_lcIy2yyezymIkUfkgtI3LYTxYBo',
-  authDomain: 'hi-chat-1df04.firebaseapp.com',
-  projectId: 'hi-chat-1df04',
-  storageBucket: 'hi-chat-1df04.appspot.com',
-  messagingSenderId: '683557448174',
-  appId: '1:683557448174:web:ff6ba6b760235c3f2446ff',
+  apiKey: import.meta.env.VITE_API_KEY,
+  authDomain: import.meta.env.VITE_AUTH,
+  projectId: import.meta.env.VITE_PROJECTID,
+  storageBucket: import.meta.env.VITE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_SENDER,
+  appId: import.meta.env.VITE_APP,
 };
 
 // Initialize Firebase
@@ -20,3 +23,6 @@ export const auth = getAuth(app);
 
 // google sağlayıcsının kurlumu
 export const provider = new GoogleAuthProvider();
+
+// veritabanın referansını alma
+export const db = getFirestore(app);

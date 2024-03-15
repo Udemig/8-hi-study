@@ -1,35 +1,31 @@
-import './App.css';
-import { signInWithPopup } from 'firebase/auth';
-import { auth, provider } from './firebase/config';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
+import AuthPage from './pages/AuthPage';
+import RoomPage from './pages/RoomPage';
+import ChatPage from './pages/ChatPage';
 
-function App() {
-  const [user, setUser] = useState();
+const App = () => {
+  // kullacının seçtiği oda
+  const [room, setRoom] = useState(null);
+  // kullancının yetkisi var mı?
+  const [isAuth, setIsAuth] = useState(localStorage.getItem('token'));
 
-  // butona tıklanınca
-  const handleLogin = () => {
-    // google pencerisi aç
-    signInWithPopup(auth, provider)
-      .then((res) => {
-        setUser(res.user);
-      })
-      .catch((err) => console.log(err));
-  };
+  // yetkisi yoksa > giriş sayfası
+  if (!isAuth) {
+    return <AuthPage setIsAuth={setIsAuth} />;
+  }
 
+  // yetkisi varsa:
   return (
-    <>
-      <h2>
-        {user ? (
-          <div>
-            <img src={user.photoURL} width={100} />
-            <h2>{user.displayName}</h2>
-          </div>
-        ) : (
-          <button onClick={handleLogin}>Google İle Giriş Yap</button>
-        )}
-      </h2>
-    </>
+    <div className="container">
+      {!room ? (
+        // oda seçilmediyse > oda seçme sayfası
+        <RoomPage setRoom={setRoom} setIsAuth={setIsAuth} />
+      ) : (
+        // oda seçildiyse > sohbet sayfası
+        <ChatPage room={room} setRoom={setRoom} />
+      )}
+    </div>
   );
-}
+};
 
 export default App;
