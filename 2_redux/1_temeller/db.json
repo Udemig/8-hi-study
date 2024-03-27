@@ -2,8 +2,8 @@
   "todos": [
     {
       "id": "2e9d04cd-857e-4ab6-ab1e-ab41eb01088c",
-      "text": "javascript projesi yap123",
-      "is_done": false,
+      "text": "javascript projesi yap123op",
+      "is_done": true,
       "created_at": "2/14/2024"
     },
     {
