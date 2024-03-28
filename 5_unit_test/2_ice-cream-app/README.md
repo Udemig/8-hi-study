@@ -29,4 +29,15 @@
 
 - Önce özellik / bileşen geliştirlir sonra testleri yazılır.
 
-# Expect
+## FireEvent
+
+- rtl içerisinde gelen olay tetikleme methodu
+- gerçek kullanıcadan uzak tepkiler verdiği için yerini userEvente bıraktı
+- teitklenen olaylar gerçek bir insanın verebilceği tepkiden çok daha hızlı bir şekilde aniden tetikleniyor
+
+## UserEvent
+
+- bu yolu kullanmak için userEvent paketi indirilmeli
+- fireEvent'in modern daha gelişmiş verisyonu
+- tetiklediğimiz olaylar gerçek kulalnıcının yağıcağı gibi belirli bir gecikmenin ardından gerçekleşiyo
+- gecikme olduğunda async await ile kullanırız
