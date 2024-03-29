@@ -15,7 +15,9 @@ const Card = ({ amount, item, addToBasket, clearFromBasket }) => {
         >
           Sıfırla
         </button>
-        <span className="fs-2">{amount}</span>
+        <span data-testid="amount" className="fs-2">
+          {amount}
+        </span>
         <button
           onClick={() => addToBasket(item)}
           className="btn btn-sm btn-outline-success"
