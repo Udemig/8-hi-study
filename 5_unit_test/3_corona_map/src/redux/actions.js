@@ -1,6 +1,6 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import axios from 'axios';
 import { headers } from './../constants/index';
+import axios from 'axios';
 
 // api'lardan bayark ve ülke corona verisini alıcak ve slice'a aktarıcak asenkron thunk aksiyonu yazalım
 export const getData = createAsyncThunk('countryData', async (isoCode) => {
