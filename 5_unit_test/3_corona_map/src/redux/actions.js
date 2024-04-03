@@ -5,7 +5,7 @@ import axios from 'axios';
 // api'lardan bayark ve ülke corona verisini alıcak ve slice'a aktarıcak asenkron thunk aksiyonu yazalım
 export const getData = createAsyncThunk('countryData', async (isoCode) => {
   // api isteğinde kullanılcak parametreyi belirle
-  const params = { iso: isoCode };
+  const params = { q: isoCode };
 
   // corona bilgilerini alıcağımız api isteğinni ayarla
   const req1 = axios.get(`https://covid-19-statistics.p.rapidapi.com/reports`, {
