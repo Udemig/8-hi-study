@@ -16,7 +16,7 @@ type s = string;
 
 //? 1) İsimli Fonksiyonlar
 function hesapla(a: n, b: n): s {
-  return 'Hesaplama Sonucu' + a + b;
+  return "Hesaplama Sonucu" + a + b;
 }
 
 hesapla(10, 20); // "Hesaplama Sonucu 30" | 30
@@ -27,10 +27,15 @@ const noNameFunc = function (a: n, b: n): n {
 };
 
 //? 3) Ok Fonksiyonlar
-const arrowFunc = (par: number): number => {
-  const total = par * 5;
-  return total / 2;
-};
+// const arrowFunc = (par: number): number => {
+//   const total = par * 5;
+//   return total / 2;
+// };
 
 //? 4) Tek Satır Fonksiyonlar
 const singleLineFunc = (par: number): number => par * 10;
+
+//? 5- Immediate Call Function
+(function () {
+  console.log("Merhabalar,bugün nasılsınız");
+})();
