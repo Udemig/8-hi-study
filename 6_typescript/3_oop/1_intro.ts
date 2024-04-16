@@ -55,7 +55,6 @@ const antika_telefon = new Old_Phone();
 antika_telefon.govde = "dikey";
 antika_telefon.telefon_tipi = "entegre";
 antika_telefon.tus_takim_tipi = "santal";
-
 // objenin methodlarına erişme
 antika_telefon.ahizeAc();
 antika_telefon.numarayıCevir("501501501051");
