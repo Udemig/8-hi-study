@@ -7,6 +7,7 @@ import { fuels, years } from "../constants";
 import { useSearchParams } from "react-router-dom";
 import { fetchCars } from "../utils";
 import { CarType } from "../types";
+import ShowMore from "../components/ShowMore";
 
 const MainPage = () => {
   const [cars, setCars] = useState<CarType[]>([]);
@@ -50,6 +51,7 @@ const MainPage = () => {
             </div>
           </section>
         )}
+        <ShowMore />
       </div>
     </div>
   );
